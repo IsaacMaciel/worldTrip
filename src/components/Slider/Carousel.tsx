@@ -18,19 +18,18 @@ SwiperCore.use([Navigation, Pagination, A11y]);
 
 export const Carousel = ({ items }: CaroulselProps) => {
   return (
-    <Flex w="100%" maxWidth="1240px" height="450px" paddingBottom="40px">
+    <Flex w="100%" maxWidth={["375px","1240px"]} height={["250px","450px"]} paddingBottom="40px">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+
       >
         {items.map((continent, index) => {
           return continent.continentName !== "Europa" ? (
-            <SwiperSlide key={index + 1} style={{ width: "1240px" }}>
+            <SwiperSlide key={index + 1} >
               <Image
                 objectFit="cover"
                 position="absolute"
@@ -46,18 +45,18 @@ export const Carousel = ({ items }: CaroulselProps) => {
                 margin="0 auto"
                 height="100%"
               >
-                <Text fontWeight="bold" fontSize="48px" color="white">
+                <Text fontWeight="bold" fontSize={["24px","48px"]}  color="white">
                   {continent.continentName} <br />
                 </Text>
-                <Text fontWeight="bold" fontSize="24px" color="white">
+                <Text fontWeight="bold" fontSize={["14px","24px"]} color="white">
                   {continent.continentDescription}
                 </Text>
               </Flex>
             </SwiperSlide>
           ) : (
-            <SwiperSlide key={index + 1} style={{ width: "1240px" }}>
-              <Link href="/continents/europa" passhref>
-                <a style={{ textDecoration: "none" }}>
+            <SwiperSlide key={index + 1}>
+              <Link style={{textDecoration: "none"}} href="/continents/europa" passhref>
+                <a>
                   <Image
                     objectFit="cover"
                     position="absolute"
@@ -77,7 +76,7 @@ export const Carousel = ({ items }: CaroulselProps) => {
                       textDecoration="none"
                       _hover={{ textDecoration: "none" }}
                       fontWeight="bold"
-                      fontSize="48px"
+                      fontSize={["24px","48px"]} 
                       color="white"
                     >
                       {continent.continentName} <br />
@@ -85,7 +84,7 @@ export const Carousel = ({ items }: CaroulselProps) => {
                     <Text
                       textDecoration="none"
                       fontWeight="bold"
-                      fontSize="24px"
+                      fontSize={["14px","24px"]}
                       color="white"
                     >
                       {continent.continentDescription}

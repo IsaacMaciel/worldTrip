@@ -7,20 +7,20 @@ interface BannerContinentProps {
 
 export const BannerContinent = ({continentImage,continentName}: BannerContinentProps) => {
     return (
-        <Flex height="500px" width="100%">
+        <Flex height={["150px","500px"]} width="100%">
         <Image
           position="absolute"
           zIndex="-1"
           objectFit="cover"
-          height="500px"
+          height={["150px","500px"]}
           width="100%"
           src={continentImage}
           alt="Continente Europeu"
         />
         <Text
-          fontSize="48px"
+          fontSize={["28px","48px"]}
           marginTop="auto"
-          marginBottom="50px"
+          marginBottom={["auto","50px"]}
           marginLeft="100px"
           fontWeight="semibold"
           color="white"

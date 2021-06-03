@@ -14,7 +14,7 @@ export const CityCard = ({
   cityImage,
 }: CityCardProps) => {
   return (
-    <Box border="1px" borderColor="orange" width="256px" height="279px">
+    <Box border="1px" borderColor="orange" width="256px" margin={["0 auto","initial"]} height="279px">
       <Image
         objectFit="cover"
         marginBottom="20px"
