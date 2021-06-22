@@ -29,7 +29,6 @@ export default function Home({ apiResponse }: HomeProps) {
     md: false,
   });
 
-  console.log(isMobile);
 
   return (
     <VStack spacing="80px">
