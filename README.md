@@ -14,7 +14,7 @@
 </p>
 
 ## 🔊 Sobre
-World Trip é um desafio proposto no curso Ignite - React JS, feito do zero, onde deveríamos ser capazes de seguir fielmente o layout feito no figma e atender as funcionalidades do projeto.
+World Trip é um desafio proposto no curso Ignite - React JS, feito do zero, onde deveríamos ser capazes de seguir fielmente o layout feito no figma e atender as funcionalidades do projeto. Foi utilizado o Next JS utilizando o SSR e o SSG e também a API integrada do framework, fornecendo um JSON com as informações dos continentes.
 
 
 ## 💻Tecnologias Utilizadas
