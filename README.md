@@ -25,5 +25,6 @@ World Trip é um desafio proposto no curso Ignite - React JS, feito do zero, ond
 ![Next.JS Badge](https://img.shields.io/badge/Next.JS-323330?logo=Next-dot-js)
 ![Axios Badge](https://img.shields.io/badge/Axios-323330?logo=Next-dot-js)
 ![Swipper JS Badge](https://img.shields.io/badge/SwipperJS-323330?logo=Next-dot-js)
+![Swipper JS Badge](https://img.shields.io/badge/SASS-323330?logo=SASS)
 ![ChakraUI Badge](https://img.shields.io/badge/ChakraUI-323330?logo=Chakra-UI)
 
